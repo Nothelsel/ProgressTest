@@ -1,0 +1,44 @@
+.progress-container {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 45rem;
+}
+
+.label {
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.progress {
+  height: 100%;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 16px;
+  background-color: #484848; 
+  position: relative;
+  border: none;
+  padding: 0;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #444;
+  z-index: -1;
+}
+
+.progress-value {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  padding-right: 10px;
+  color: #fff;
+  font-weight: 300;
+}

@@ -1,0 +1,7 @@
+<div class="progress-container">
+  <div class="label">{{ label }}</div>
+  <span class="progress-value">{{ progress }}%</span>
+  <div class="progress-bar">
+    <div class="progress" [style.width]="progress + '%'" [style.background]="progressColor"></div>
+  </div>
+</div>
